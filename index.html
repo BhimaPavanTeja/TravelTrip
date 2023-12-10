@@ -1,0 +1,147 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5558a944001743.5804ef0a82d45.jpg");
+      font-family: Arial;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: 12px;
+      margin: 0; 
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .well h3 {
+      background-color: rgb(28, 235, 139);
+      border-radius: 0px 10px 10px 0px;
+      box-shadow: 2px 3px 3px black;
+      text-align: center;
+      color: white;
+      font-size: 100px;
+      margin-top: 100px;
+      float: left;
+      width: 50%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="well">
+    <h3>welcome!</h3>
+  </div>
+  <div class="main-form">
+    <form method="get" action="login_db/" align="center">
+      <h1>Barrier Free Travel</h1>
+      <input type="text" name="uname" placeholder="Username" value="" required>
+      <input type="password" name="pwd" placeholder="Password" value="" required>
+      <a href="travel.html" id="btn">sign in</a><br>
+      <a href="signin.html" title="" id="hola">Sign Up</a>
+    </form>
+  </div>
+</body>
+
+<style>
+
+  input[type="text"],
+  input[type="password"] {
+    background: #EAE6E1;
+    border: 0;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+    width: 94%;
+    margin: 5px 0;
+    outline: medium none;
+    color: #838383;
+  }
+
+
+
+  #btn {
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    background: #50BFA4;
+    border: 0;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 94%;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  h1 {
+    color: #090a0a;
+    margin-right: 70px;
+  }
+
+  input[type="submit"]:hover {
+    background: #58CCB0;
+  }
+
+  .main-form {
+    width: 350px;
+    margin: 100px auto;
+    padding: 50px;
+    text-align: right;
+    margin-right: 50px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.607);
+    border-radius: 10px;
+    background: #fff;
+    margin-top: -200px;
+  }
+
+  @media only screen and (max-width:500px) {
+    body {
+      background-color: #fff;
+    }
+    .main-form {
+      width: 100%;
+      margin: 0 auto;
+      padding: 50px;
+      text-align: center;
+      margin-right: 50px;
+      border: none;
+      box-shadow: none;
+      border-radius: 0px;
+      background: #fff;
+      margin-top: 250px;
+    }
+
+    .well h3 {
+      text-align: center;
+      color: white;
+      font-size: 0px;
+      margin-top: 0px;
+      float: left;
+      width: 0%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    #btn {
+      width: 50%;
+    }
+    #btn {
+      margin-left: 23%;
+      margin-top: 10px;
+    }
+  }
+</style>
+
+</html>

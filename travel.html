@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="signin.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url(image/travel_HD.jpg);">
+            <h1>Welcome to our Travel Website</h1>
+            <p>Explore the world with us</p>
+            <a href="book.html" class="btn">Book and plan trips now!</a>
+        </section>
+
+        <section class="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destination-card">
+                <img src="image/shutterstock_400068991_qpukq2.webp" alt="Destination 1">
+                <h3>Taj Mahal</h3>
+                <p>Visit the most beautiful and wonderful place in india</p>
+            </div>
+            <div class="destination-card">
+                <img src="image/Delhi_Delhi_India-gate_India-gate-in-Delhi-erected-in-memory-of-war-martyrs_IWPL3.webp" alt="Destination 2">
+                <h3>India Gate</h3>
+                <p>Visit the most beautiful and wonderful place in india</p>
+            </div>
+            <div class="destination-card">
+                <img src="image/R.jpg" alt="Destination 3">
+                <h3>Destination 3</h3>
+                <p>Visit the most beautiful and wonderful place in india</p>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc id aliquam lacinia, nunc mauris lacinia nunc, id lacinia nunc mauris id nunc.</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Travel Website. All rights reserved.</p>
+    </footer>
+</body>
+<style>
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: #d63434;
+    border-radius: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.destinations {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.destination-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.destination-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.destination-card p {
+    font-size: 16px;
+}
+
+.about {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</html>
